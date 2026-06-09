@@ -6,10 +6,16 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }*/
+
 img{
     height: 500px;
     width: 500px;
-    border-radius: 500px;
+}
+@media (mid-width: 600px){
+   img{
+    height: auto;
+    width: 500px;
+ }
 }
 ol{
     list-style-type: upper-alpha;
@@ -39,6 +45,15 @@ nav{
     gap: 20px;
 }
 
+@media (mid-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 500px
+    }
+
+}
+
 #p1{
     font-style: italic;
 }
@@ -53,6 +68,13 @@ nav{
 
 .grid{
     display: grid;
+}
+@media (max-width: 1024px){
+    .grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+
+    }
 }
 #one{
     grid-row: 1/2;
